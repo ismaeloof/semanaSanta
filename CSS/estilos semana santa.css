@@ -1,64 +1,88 @@
-.home{
-    margin-top: 4%;   
-    margin-left: 4%;
-    margin-right: 4%;
-    font-size:larger;
-    
+/* Estos estilos son los generales de todas las páginas */
+.home {
+  margin-top: 4%;
+  margin-left: 4%;
+  margin-right: 4%;
+  font-size: larger;
 }
-body{
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: rgb(236, 154, 243);
-    text-align: center;    
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgb(236, 154, 243);
+  text-align: center;
 }
 
 .title {
-    font-family: 'Alkatra', cursive !important;
-    text-align: center;
-    width: auto;
-    margin-top: 3%;
-    background-color: rgb(236, 154, 243);
-    color: rgb(12, 12, 12);
-    text-decoration: none;
-    display: block;
-    font-size: 30px;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+  font-family: "Alkatra", cursive !important;
+  text-align: center;
+  width: auto;
+  margin-top: 3%;
+  background-color: rgb(236, 154, 243);
+  color: rgb(12, 12, 12);
+  text-decoration: none;
+  display: block;
+  font-size: 30px;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
-nav{
-    background-color: hotpink;
-    background-position: center;
-    
-
+nav {
+  background-color: hotpink;
+  background-position: center;
 }
-nav a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-}
-.contenedor{
-    display: flex;
-    width: 25%;
-    margin-top: 1%;   
-}
-.cajaLad{
-    border: 1px solid brown;
-}
-.cajaCent{
-    border: 1px solid brown;
-    width: auto;
-    height: auto;
-    text-align:center;
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
 }
 
-div{
-    margin-left: 10px;
-}
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    color: rgb(0, 0, 0);
-  }
+  position: relative;
+  margin-top: 140px;
+  width: 100%;
+  height: 40px;
+  color: rgb(0, 0, 0);
+}
+
+/*       Estilos Semana Santa(Main) */
+
+main {
+  display: flex;
+  align-items: center;
+}
+aside {
+  font-weight: bolder;
+  width: 30%;
+  font-size: 2em;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+  height: 100%;
+}
+.borde {
+  padding: 10px;
+  border: 1px solid brown;
+}
+section {
+    display: flex;
+    align-items: center;
+  width: 70%;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 35px;
+}
+
+article figure{
+    height: auto;
+}
+article figure img {
+  width: 185px;
+  box-shadow: 4px 5px 10px #392d2d;
+  border-radius: 15px;
+  height: auto;
+}
