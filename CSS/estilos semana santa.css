@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #ffe6f7;
+  --secondary-color: #ffabe1;
+  --terciary-color: #c689c6;
+  --quaternary-color: #937dc2;
+}
+
 /* Estos estilos son los generales de todas las páginas */
 .home {
   margin-top: 4%;
@@ -8,8 +15,9 @@
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  background-color: rgb(236, 154, 243);
+  background-color: var(--primary-color);
   text-align: center;
+  
 }
 
 .title {
@@ -17,7 +25,6 @@ body {
   text-align: center;
   width: auto;
   margin-top: 3%;
-  background-color: rgb(236, 154, 243);
   color: rgb(12, 12, 12);
   text-decoration: none;
   display: block;
@@ -29,8 +36,9 @@ body {
   font-weight: bold;
 }
 nav {
-  background-color: hotpink;
+  background-color: var(--secondary-color);
   background-position: center;
+  padding: 10px;
 }
 nav a {
   color: rgb(0, 0, 0);
@@ -40,10 +48,28 @@ nav a {
 
 footer {
   position: relative;
-  margin-top: 140px;
+  margin-top: 1%;
   width: 100%;
   height: 40px;
   color: rgb(0, 0, 0);
+}
+.procesion{
+  display: flex;
+  width: 500px;
+}
+.pasos{
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 300px;  
+}
+.pasos p{
+  margin: 10px;
+}
+.miniaturas{
+  width: 300px;
+  margin: auto;
 }
 
 /*       Estilos Semana Santa(Main) */
@@ -55,7 +81,7 @@ main {
 aside {
   font-weight: bolder;
   width: 30%;
-  font-size: 2em;
+  font-size: 1em;
   text-align: center;
   margin: 5px;
   padding: 5px;
@@ -63,11 +89,11 @@ aside {
 }
 .borde {
   padding: 10px;
-  border: 1px solid brown;
+  border: 5px solid var(--quaternary-color);
 }
 section {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
   width: 70%;
 }
 
@@ -77,12 +103,36 @@ article {
   margin: 35px;
 }
 
-article figure{
-    height: auto;
+article figure {
+  height: auto;
 }
 article figure img {
   width: 185px;
   box-shadow: 4px 5px 10px #392d2d;
   border-radius: 15px;
   height: auto;
+}
+/* *********************** Estilos Domingo de Ramos******************************** */
+
+
+.tabla {  
+  margin: auto;
+  border: solid var(--quaternary-color);
+}
+.hora {
+  text-align: center;
+  margin: auto;
+  border: solid var(--quaternary-color);
+  background-color: var(--secondary-color);
+}
+.recogida {
+  margin: auto;
+  border: solid var(--quaternary-color);
+  background-color: var(--secondary-color);
+}
+td {
+  margin: auto;
+  text-align: center;
+  border: solid var(--quaternary-color);
+  padding: 4px;
 }
