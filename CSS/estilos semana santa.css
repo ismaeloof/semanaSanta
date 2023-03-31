@@ -46,9 +46,33 @@ nav a {
   font-size: 18px;
 }
 
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0a0a0a;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:var(--primary-color);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 footer {
   position: relative;
-  margin-top: 1%;
+  margin-top: 50px;
   width: 100%;
   height: 40px;
   color: rgb(0, 0, 0);
@@ -56,6 +80,9 @@ footer {
 .procesion{
   display: flex;
   width: 500px;
+  margin-top: 30px;
+  margin-left: 17px;
+  margin-right: 17px;
 }
 .pasos{
   text-align: start;
@@ -63,9 +90,11 @@ footer {
   flex-direction: column;
   align-self: center;
   width: 300px;  
+
 }
 .pasos p{
   margin: 10px;
+  align-items: flex-start;
 }
 .miniaturas{
   width: 300px;
@@ -76,15 +105,15 @@ footer {
 
 main {
   display: flex;
-  align-items: center;
+  
 }
 aside {
   font-weight: bolder;
-  width: 30%;
+  width: 35%;
   font-size: 1em;
   text-align: center;
-  margin: 5px;
-  padding: 5px;
+  margin-top: 90px;
+  padding: 20px;
   height: 100%;
 }
 .borde {
@@ -94,13 +123,15 @@ aside {
 section {
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 65%;
+  margin-top: 5%;
 }
 
 article {
   display: flex;
   flex-wrap: wrap;
-  margin: 35px;
+  margin:auto;
+  justify-content: center;
 }
 
 article figure {
@@ -112,7 +143,7 @@ article figure img {
   border-radius: 15px;
   height: auto;
 }
-/* *********************** Estilos Domingo de Ramos******************************** */
+/* *********************** Estilos dias semana******************************** */
 
 
 .tabla {  
@@ -125,6 +156,11 @@ article figure img {
   border: solid var(--quaternary-color);
   background-color: var(--secondary-color);
 }
+.nombres{
+  font-style: oblique;
+  font-size: 17px;
+  background-color: var(--secondary-color);
+}
 .recogida {
   margin: auto;
   border: solid var(--quaternary-color);
@@ -135,4 +171,7 @@ td {
   text-align: center;
   border: solid var(--quaternary-color);
   padding: 4px;
+}
+figcaption{
+  margin-top: 10px;
 }
